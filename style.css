@@ -12,7 +12,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    animation: fadeInHeaderBg 2s ease-in forwards;
 }
 .logo-title {
     display: flex;
@@ -377,6 +376,7 @@ body {
     font-size: 1em;
     color: #333;
 }
+
 
 
 
