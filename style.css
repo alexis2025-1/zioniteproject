@@ -6,7 +6,7 @@ body {
 }
 header {
     background: url('images (3).jpg') center center/cover no-repeat;
-    color: #2214e9;
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -377,6 +377,7 @@ body {
     font-size: 1em;
     color: #333;
 }
+
 
 
 
