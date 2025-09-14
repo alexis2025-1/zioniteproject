@@ -263,6 +263,7 @@ main {
 .footer .whatsapp { background: #25d366; }
 .footer .telegram { background: #0088cc; }
 .footer .tiktok { background: #010101; }
+.footer .instagram { background: #010101; }
 .footer .social:hover {
     opacity: 0.8;
 }
@@ -376,6 +377,7 @@ body {
     font-size: 1em;
     color: #333;
 }
+
 
 
 
