@@ -397,8 +397,9 @@ body {
         }
         
         .footer-section ul li a:hover {
-            color: var(--primary);
+            color: #fefefe06;
         }
+
 
 
 
