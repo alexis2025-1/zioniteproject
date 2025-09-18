@@ -454,13 +454,13 @@ body {
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #fff;
     margin: 20px 0;
     font-size: 2.5rem;
 }
 
 h2 {
-    color: #3498db;
+    color: #000000;
     margin: 25px 0 15px 0;
 }
 
@@ -552,6 +552,7 @@ p {
         padding: 15px;
     }
 }
+
 
 
 
