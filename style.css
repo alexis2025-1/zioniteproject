@@ -377,6 +377,19 @@ body {
     font-size: 1em;
     color: #333;
 }
+ .map {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 300px;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
 
 
