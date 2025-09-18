@@ -390,6 +390,15 @@ body {
             height: 100%;
             border: none;
         }
+.footer-section ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--secondary);
+        }
 
 
 
