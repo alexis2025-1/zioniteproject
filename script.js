@@ -232,3 +232,73 @@ loginForm.onsubmit = async function(e) {
         loginMessage.textContent = 'Server error.';
     }
 }
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get elements
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+    
+    // Add event listener for form submission
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent form from submitting normally
+        
+        const searchTerm = searchInput.value.trim();
+        
+        if (searchTerm === '') {
+            showResults('Please enter a search term.');
+            return;
+        }
+        
+        // In a real application, you would send a request to a server here
+        // For this example, we'll just simulate search results
+        simulateSearch(searchTerm);
+    });
+    
+    // Function to simulate search (replace with actual search functionality)
+    function simulateSearch(term) {
+        // Clear previous results
+        searchResults.innerHTML = '';
+        
+        // Simulate a delay for searching
+        setTimeout(() => {
+            // Create mock results based on the search term
+            const results = [
+                Result 1: Information about <strong>${term}</strong>,
+                Result 2: More details on <strong>${term}</strong>,
+                Result 3: Advanced topics in <strong>${term}</strong>
+            ];
+            
+            // Display results
+            if (results.length > 0) {
+                let resultsHTML = '<h3>Search Results:</h3><ul>';
+                results.forEach(result => {
+                    resultsHTML += <li>${result}</li>;
+                });
+                resultsHTML += '</ul>';
+                
+                showResults(resultsHTML);
+            } else {
+                showResults(No results found for "${term}".);
+            }
+        }, 800);
+    }
+    
+    // Function to show results
+    function showResults(content) {
+        searchResults.innerHTML = content;
+        searchResults.classList.add('show');
+        
+        // Scroll to results
+        searchResults.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+    
+    // Add event listener for input focus
+    searchInput.addEventListener('focus', function() {
+        this.parentElement.classList.add('focused');
+    });
+    
+    searchInput.addEventListener('blur', function() {
+        this.parentElement.classList.remove('focused');
+    });
+});
