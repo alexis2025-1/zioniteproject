@@ -391,7 +391,7 @@ body {
             border: none;
         }
 .footer-section ul li a {
-            color: #ddd;
+            color: #fff;
             text-decoration: none;
             transition: color 0.3s;
         }
@@ -399,6 +399,7 @@ body {
         .footer-section ul li a:hover {
             color: var(--secondary);
         }
+
 
 
 
