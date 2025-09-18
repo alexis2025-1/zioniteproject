@@ -393,11 +393,54 @@ body {
 .footer-section ul li a {
             color: #fff;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.4s;
+            text-align:center;
+            
         }
         
         .footer-section ul li a:hover {
-            color: #fefefe06;
+            color: #fff;
+        }
+.sidebar {
+            width: 250px;
+            background: var(--primary);
+            color: white;
+            height: 100vh;
+            position: fixed;
+            padding: 1.5rem 1rem;
+        }
+        
+        .sidebar h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .sidebar ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .sidebar ul li a i {
+            margin-right: 10px;
         }
 
 
