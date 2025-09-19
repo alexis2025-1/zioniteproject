@@ -391,12 +391,11 @@ body {
             border: none;
         }
 .footer-section ul li a {
-            color: #fff;
+            color:#fff;
             text-decoration: none;
-            transition: color 0.4s;
-            text-align:center;
             
-        }
+            text-align:center;
+             }
         
      
 .sidebar {
@@ -552,6 +551,7 @@ p {
         padding: 15px;
     }
 }
+
 
 
 
